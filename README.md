@@ -12,6 +12,7 @@ PT FUSI SOLUSI TRANSFORMASI
   - Aturan apa saja yang diterapkan oleh Spring Framework
   - Tujuan penggunaan Spring Framework
   
+  
 2. Jelaskan menurut pendapat anda tentang
   - Hibernate
   - Hibernate Dialect
@@ -29,8 +30,10 @@ PT FUSI SOLUSI TRANSFORMASI
   - @ManyToMany (berikan contoh kasusnya **bukan koding**)
   - SessionFactory dan Session
  
+ 
  3. Buat program bagaimana cara meload aplikasi spring dengan menggunakan **Java Configuration / Annotation** dan Buat sebuah bean dengan tipe data java.lang.Integer yang di beri nilai 20 kemudian buat sebuah kelas baru dengan nama `UmurSaya` dalam package `com.tabeldata.soal.spring` kemudian 
  tampilkan ke console seperti berikut `Saya ber usia (20) tahun` **nilai 20 diambil dari bean yang di deklarasikan spring container** 
+ 
  
  4. Buat sebuah program untuk mengkoneksikan ke database **MySQL** dengan menggunakan **Spring Boot** dan **Hibernate (JPA)** dan buatlah tabel berserta datanya seperti berikut:
  
@@ -58,7 +61,9 @@ PT FUSI SOLUSI TRANSFORMASI
  | 2            | Budi              | 0918234483343   | Jl. Melawai         | B 4343 KDF    |
  | 3            | Adi Putra         | 0900934483343   | Jl. panglima polim  | B 2343 DKJ    |
  
+ 
  5. Buatlah tampilan UI (User Interface) Web dari soal No. 4 dengan menggunakan Vaadin Framework, gambarlah desain web dengan vaadin designer
+ 
  
  6. Integrasikan soal No. 4 dan No. 5, Spring boot project sebagai back-end dan Vaadin Framework sebagai Front-end (OPSIONAL)
  
