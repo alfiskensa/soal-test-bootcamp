@@ -61,6 +61,7 @@ PT FUSI SOLUSI TRANSFORMASI
  | 2            | Budi              | 0918234483343   | Jl. Melawai         | B 4343 KDF    |
  | 3            | Adi Putra         | 0900934483343   | Jl. panglima polim  | B 2343 DKJ    |
  
+ setelah itu lalu buat fungsi crudnya dengan spring boot
  
  5. Buatlah tampilan UI (User Interface) Web dari soal No. 4 dengan menggunakan Vaadin Framework, gambarlah desain web dengan vaadin designer
  
