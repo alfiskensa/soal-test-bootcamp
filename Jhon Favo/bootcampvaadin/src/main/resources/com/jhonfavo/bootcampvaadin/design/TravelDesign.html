@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout style-name="crud-template" spacing="false" responsive size-full margin="false">
+   <vaadin-horizontal-layout style-name="top-bar" spacing="false" width-full height="50px">
+    <vaadin-horizontal-layout spacing="false" width-full :middle :expand>
+     <vaadin-text-field icon="fonticon://Vaadin-Icons/e805" style-name="small inline-icon search" placeholder="Search" width-full _id="search"></vaadin-text-field>
+    </vaadin-horizontal-layout>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e801" style-name="borderless" plain-text _id="add" :middle :right>
+      Add new 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-css-layout style-name="content" size-full :expand>
+    <vaadin-css-layout style-name="list" size-full>
+     <vaadin-grid caption-as-html icon="fonticon://Vaadin-Icons/e906" caption="List Travel" size-full _id="list">
+      <table>
+       <colgroup>
+        <col column-id="namasupir" sortable>
+        <col column-id="notlp" sortable>
+        <col column-id="alamat" sortable>
+        <col column-id="nopolisi" sortable>
+       </colgroup>
+       <thead>
+        <tr default>
+         <th plain-text column-ids="namasupir">Nama Supir</th>
+         <th plain-text column-ids="notlp">No telepon</th>
+         <th plain-text column-ids="alamat">alamat</th>
+         <th plain-text column-ids="nopolisi">No Polisi</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr item="project1">
+         <td>Eko</td>
+         <td>0813284343433</td>
+         <td>Jl.cisaranten</td>
+         <td>D 2524 ZZC</td>
+        </tr>
+        <tr item="project1">
+         <td>Budi</td>
+         <td>0918234483343</td>
+         <td>Jl. Melawai</td>
+         <td>B 4343 KDF</td>
+        </tr>
+        <tr item="project1">
+         <td>Adi Putra</td>
+         <td>0900934483343</td>
+         <td>Jl. panglima polim</td>
+         <td>B 2343 DKJ</td>
+        </tr>
+       </tbody>
+      </table>
+     </vaadin-grid>
+    </vaadin-css-layout>
+    <vaadin-vertical-layout style-name="inspect" spacing="false" size-full margin="false">
+     <vaadin-css-layout style-name="edit" size-full :expand>
+      <vaadin-css-layout style-name="section half" width-full>
+       <vaadin-text-field caption="Nama Supir" style-name="small" width-full _id="nama"></vaadin-text-field>
+      </vaadin-css-layout>
+      <vaadin-css-layout style-name="section half" width-full>
+       <vaadin-text-field caption="Nomor Telepon" style-name="small" width-full _id="notlp"></vaadin-text-field>
+      </vaadin-css-layout>
+      <vaadin-css-layout style-name="section half" width-full>
+       <vaadin-text-field caption="Alamat" style-name="small" width-full _id="alamat"></vaadin-text-field>
+      </vaadin-css-layout>
+      <vaadin-css-layout style-name="section half" width-full>
+       <vaadin-text-field caption="Nomor Telepon" style-name="small" width-full _id="notlp1"></vaadin-text-field>
+      </vaadin-css-layout>
+     </vaadin-css-layout>
+     <vaadin-horizontal-layout style-name="buttons border-top" width-full height="50px">
+      <vaadin-button style-name="small primary" plain-text _id="update" :middle>
+        Update 
+      </vaadin-button>
+      <vaadin-button style-name="small" plain-text _id="cancel" :middle :center>
+        Cancel 
+      </vaadin-button>
+      <vaadin-button style-name="small danger" plain-text _id="delete" :middle :right :expand>
+        Delete 
+      </vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-vertical-layout>
+   </vaadin-css-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

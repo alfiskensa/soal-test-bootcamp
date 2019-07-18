@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-vertical-layout style-name="crud-template" spacing="false" responsive size-full margin="false">
+   <vaadin-horizontal-layout style-name="top-bar" spacing="false" width-full height="50px">
+    <vaadin-horizontal-layout spacing="false" width-full :middle :expand>
+     <vaadin-text-field icon="fonticon://Vaadin-Icons/e805" style-name="small inline-icon search" placeholder="Search" width-full _id="search"></vaadin-text-field>
+    </vaadin-horizontal-layout>
+    <vaadin-button icon="fonticon://Vaadin-Icons/e801" style-name="borderless" plain-text _id="add" :middle :right>
+      Add new 
+    </vaadin-button>
+   </vaadin-horizontal-layout>
+   <vaadin-css-layout style-name="content" size-full :expand>
+    <vaadin-css-layout style-name="list" size-full>
+     <vaadin-grid icon="fonticon://Vaadin-Icons/e806" caption="List Tiket" size-full _id="list">
+      <table>
+       <colgroup>
+        <col column-id="project" sortable>
+        <col column-id="status" sortable>
+        <col column-id="jadwal" sortable>
+       </colgroup>
+       <thead>
+        <tr default>
+         <th plain-text column-ids="project">Project</th>
+         <th plain-text column-ids="status">Status</th>
+         <th plain-text column-ids="jadwal">Jadwal Keberangkatan</th>
+        </tr>
+       </thead>
+       <tbody>
+        <tr item="project1">
+         <td>Lukman</td>
+         <td>Eko</td>
+         <td>2017-10-20 10:00:00</td>
+        </tr>
+        <tr item="project1">
+         <td>dewa ngoman</td>
+         <td>budi</td>
+         <td>2017-10-20 10:00:00</td>
+        </tr>
+       </tbody>
+      </table>
+     </vaadin-grid>
+    </vaadin-css-layout>
+    <vaadin-vertical-layout style-name="inspect" spacing="false" size-full margin="false">
+     <vaadin-css-layout style-name="edit" size-full :expand>
+      <vaadin-css-layout style-name="section half" width-full>
+       <vaadin-combo-box caption="Nama Penumpang" width-full data-item-type="java.lang.String" _id="penumpang">
+        <option item="Option1">Lukman</option>
+        <option item="Option2">Akbar</option>
+        <option item="Option3">Dewa ngoman</option>
+       </vaadin-combo-box>
+      </vaadin-css-layout>
+      <vaadin-css-layout style-name="section half" width-full>
+       <vaadin-combo-box caption="Nama Supir" width-full data-item-type="java.lang.String" _id="supir">
+        <option item="Option1">Eko</option>
+        <option item="Option2">Budi</option>
+        <option item="Option3">Adi Putra</option>
+       </vaadin-combo-box>
+      </vaadin-css-layout>
+      <vaadin-css-layout style-name="section half" width-full>
+       <vaadin-date-field caption="Jadwal" width-full _id="tgl"></vaadin-date-field>
+      </vaadin-css-layout>
+     </vaadin-css-layout>
+     <vaadin-horizontal-layout style-name="buttons border-top" width-full height="50px">
+      <vaadin-button style-name="small primary" plain-text _id="update" :middle>
+        Update 
+      </vaadin-button>
+      <vaadin-button style-name="small" plain-text _id="cancel" :middle :center>
+        Cancel 
+      </vaadin-button>
+      <vaadin-button style-name="small danger" plain-text _id="delete" :middle :right :expand>
+        Delete 
+      </vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-vertical-layout>
+   </vaadin-css-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

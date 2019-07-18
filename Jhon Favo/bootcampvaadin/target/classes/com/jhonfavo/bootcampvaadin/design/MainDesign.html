@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-horizontal-layout style-name="app-shell" spacing="false" responsive size-full>
+   <vaadin-css-layout style-name="navigation-bar-container" width="200px" height-full>
+    <vaadin-css-layout style-name="navigation-bar" size-full>
+     <vaadin-label style-name="logo" width-full plain-text>
+       Application menu 
+     </vaadin-label>
+     <vaadin-button icon="fonticon://Vaadin-Icons/e7b3" style-name="menu borderless" plain-text _id="menuButton">
+       Menu 
+     </vaadin-button>
+     <vaadin-css-layout style-name="navigation" width-full _id="menu">
+      <vaadin-button icon="fonticon://Vaadin-Icons/e7ed" style-name="borderless" width-full plain-text _id="home">
+        Home Menu 
+      </vaadin-button>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e928" style-name="borderless" width-full plain-text _id="penumpang">
+        Penumpang 
+      </vaadin-button>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e6dd" style-name="borderless" width-full plain-text _id="travel">
+        Travel 
+      </vaadin-button>
+      <vaadin-button icon="fonticon://Vaadin-Icons/e76e" style-name="borderless" width-full plain-text _id="tiket">
+        Tiket 
+      </vaadin-button>
+     </vaadin-css-layout>
+    </vaadin-css-layout>
+   </vaadin-css-layout>
+   <vaadin-vertical-layout style-name="content-container" spacing="false" size-full margin="false" :expand></vaadin-vertical-layout>
+  </vaadin-horizontal-layout>
+ </body>
+</html>
