@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PENUMPANG</title>
+</head>
+<body>
+	<table style="width:100%">
+	<tr>
+		<th>ID PENUMPANG</th>
+		<th>NAMA</th>
+		<th>NO TELELPON</th>
+		<th>ALAMAT</th>
+	</tr>
+	
+	<tr th:each="pen : ${list}">
+		<td th:text="${pen.idPenumpang}"></td>
+		<td th:text="${pen.nama}"></td>
+		<td th:text="${pen.noTelp}"></td>
+		<td th:text="${pen.alamat}"></td>
+	</tr>
+	</table>
+</body>
+</html>
