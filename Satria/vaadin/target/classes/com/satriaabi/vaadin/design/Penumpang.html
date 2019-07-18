@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-absolute-layout>
+   <vaadin-label plain-text :top="16px" :left="12px">
+     HOME 
+   </vaadin-label>
+   <vaadin-label plain-text :top="16px" :left="79px">
+     TIKET 
+   </vaadin-label>
+   <vaadin-label plain-text :top="16px" :left="139px">
+     TRAVEL 
+   </vaadin-label>
+   <vaadin-label plain-text :top="16px" :left="214px">
+     PENUMPANG 
+   </vaadin-label>
+   <vaadin-label width="106px" height="29px" plain-text :top="114px" :left="8px">
+     PENUMPANG 
+   </vaadin-label>
+   <vaadin-grid width="613px" height="188px" :top="175px" :left="8px">
+    <table>
+     <colgroup>
+      <col column-id="id" sortable="false">
+      <col column-id="nama" sortable="false">
+      <col column-id="telp" sortable="false">
+      <col column-id="alamat" sortable="false">
+     </colgroup>
+     <thead>
+      <tr default>
+       <th plain-text column-ids="id">ID PENUMPANG</th>
+       <th plain-text column-ids="nama">NAMA</th>
+       <th plain-text column-ids="telp">NO TELP</th>
+       <th plain-text column-ids="alamat">ALAMAT</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr item="penumpang1">
+       <td>1</td>
+       <td>LUKMAN</td>
+       <td>0812341234213</td>
+       <td>Jl.CISARANTEN</td>
+      </tr>
+      <tr item="penumpang2">
+       <td>2</td>
+       <td>AKBAR</td>
+       <td>0918234483343</td>
+       <td>Jl.MELAWAI</td>
+      </tr>
+      <tr item="penumpang3">
+       <td>3</td>
+       <td>DEWA NGOMAN</td>
+       <td>0900934483343</td>
+       <td>Jl.PANGLIMA POLIM</td>
+      </tr>
+     </tbody>
+    </table>
+   </vaadin-grid>
+   <vaadin-button width="80px" plain-text :top="399px" :left="434px">
+     ADD 
+   </vaadin-button>
+   <vaadin-button width="80px" plain-text :top="399px" :left="546px">
+     EDIT 
+   </vaadin-button>
+   <vaadin-text-field :top="114px" :left="434px"></vaadin-text-field>
+   <vaadin-label plain-text :top="16px" :left="556px">
+     SETTING 
+   </vaadin-label>
+  </vaadin-absolute-layout>
+ </body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-absolute-layout>
+   <vaadin-absolute-layout>
+    <vaadin-label plain-text :top="16px" :left="12px">
+      HOME 
+    </vaadin-label>
+    <vaadin-label plain-text :top="16px" :left="79px">
+      TIKET 
+    </vaadin-label>
+    <vaadin-label plain-text :top="16px" :left="139px">
+      TRAVEL 
+    </vaadin-label>
+    <vaadin-label plain-text :top="16px" :left="214px">
+      PENUMPANG 
+    </vaadin-label>
+    <vaadin-label width="106px" height="29px" plain-text :top="114px" :left="8px">
+      TIKET 
+    </vaadin-label>
+    <vaadin-grid width="613px" height="188px" :top="175px" :left="8px">
+     <table>
+      <colgroup>
+       <col column-id="id" sortable="false">
+       <col column-id="idpenumpang" sortable="false">
+       <col column-id="idtravel" sortable="false">
+       <col column-id="jadwal" sortable="false">
+      </colgroup>
+      <thead>
+       <tr default>
+        <th plain-text column-ids="id">ID</th>
+        <th plain-text column-ids="idpenumpang">ID PENUMPANG</th>
+        <th plain-text column-ids="idtravel">ID TRAVEL</th>
+        <th plain-text column-ids="jadwal">JADWAL</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr item="tiket1">
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2017-10-20 10:00</td>
+       </tr>
+       <tr item="tiket2">
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>2017-10-20 10:00</td>
+       </tr>
+       <tr item="tiket3">
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2017-10-20 10:00</td>
+       </tr>
+      </tbody>
+     </table>
+    </vaadin-grid>
+    <vaadin-button width="80px" plain-text :top="399px" :left="434px">
+      ADD 
+    </vaadin-button>
+    <vaadin-button width="80px" plain-text :top="399px" :left="546px">
+      EDIT 
+    </vaadin-button>
+    <vaadin-text-field :top="106px" :left="434px"></vaadin-text-field>
+    <vaadin-label plain-text :top="16px" :left="557px">
+      SETTING 
+    </vaadin-label>
+   </vaadin-absolute-layout>
+  </vaadin-absolute-layout>
+ </body>
+</html>

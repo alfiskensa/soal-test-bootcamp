@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-absolute-layout>
+   <vaadin-absolute-layout>
+    <vaadin-label plain-text :top="16px" :left="12px">
+      HOME 
+    </vaadin-label>
+    <vaadin-label plain-text :top="16px" :left="79px">
+      TIKET 
+    </vaadin-label>
+    <vaadin-label plain-text :top="16px" :left="139px">
+      TRAVEL 
+    </vaadin-label>
+    <vaadin-label plain-text :top="16px" :left="214px">
+      PENUMPANG 
+    </vaadin-label>
+    <vaadin-label width="106px" height="29px" plain-text :top="114px" :left="8px">
+      TRAVEL 
+    </vaadin-label>
+    <vaadin-grid width="613px" height="188px" :top="175px" :left="8px">
+     <table>
+      <colgroup>
+       <col column-id="id" sortable="false">
+       <col column-id="nama" sortable="false">
+       <col column-id="telp" sortable="false">
+       <col column-id="alamat" sortable="false">
+       <col column-id="polisi" sortable="false">
+      </colgroup>
+      <thead>
+       <tr default>
+        <th plain-text column-ids="id">ID TRAVEL</th>
+        <th plain-text column-ids="nama">NAMA SUPIR</th>
+        <th plain-text column-ids="telp">NO TELP</th>
+        <th plain-text column-ids="alamat">ALAMAT</th>
+        <th plain-text column-ids="polisi">NO POLISI</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr item="travel1">
+        <td>1</td>
+        <td>EKO</td>
+        <td>0813284343433</td>
+        <td>Jl.CISARANTEN</td>
+        <td>D 2524 ZZC</td>
+       </tr>
+       <tr item="travel2">
+        <td>2</td>
+        <td>BUDI</td>
+        <td>0918234483343</td>
+        <td>Jl.MELAWAI</td>
+        <td>B4343 KDF</td>
+       </tr>
+       <tr item="travel3">
+        <td>3</td>
+        <td>ADI PUTRA</td>
+        <td>0900934483343</td>
+        <td>Jl.PANGLIMA POLIM</td>
+        <td>B 2343 DKJ</td>
+       </tr>
+      </tbody>
+     </table>
+    </vaadin-grid>
+    <vaadin-button width="80px" plain-text :top="399px" :left="434px">
+      ADD 
+    </vaadin-button>
+    <vaadin-button width="80px" plain-text :top="399px" :left="546px">
+      EDIT 
+    </vaadin-button>
+    <vaadin-text-field width="152px" :top="106px" :left="468px"></vaadin-text-field>
+    <vaadin-label plain-text :top="16px" :left="556px">
+      SETTING 
+    </vaadin-label>
+   </vaadin-absolute-layout>
+  </vaadin-absolute-layout>
+ </body>
+</html>
