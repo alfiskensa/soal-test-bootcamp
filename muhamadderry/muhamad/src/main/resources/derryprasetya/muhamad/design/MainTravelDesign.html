@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-absolute-layout>
+   <vaadin-absolute-layout height="98.27%">
+    <vaadin-label plain-text :top="17px" :left="353px">
+      Menu Tiket 
+    </vaadin-label>
+    <vaadin-grid width="604px" height="188px" :top="140px" :left="82px">
+     <table>
+      <colgroup>
+       <col column-id="id" sortable="false">
+       <col column-id="id_penumpang" sortable="false">
+       <col column-id="id_travel" sortable="false">
+       <col column-id="jadwal" sortable="false">
+      </colgroup>
+      <thead>
+       <tr default>
+        <th plain-text column-ids="id">ID</th>
+        <th plain-text column-ids="id_penumpang">ID Penumpang</th>
+        <th plain-text column-ids="id_travel">ID Penumpang</th>
+        <th plain-text column-ids="jadwal">Jadwal</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr item="id1">
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>2017-10-20 10:00</td>
+       </tr>
+       <tr item="id2">
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>2017-10-20 10:00</td>
+       </tr>
+       <tr item="id3">
+        <td>3</td>
+        <td>3</td>
+        <td>2</td>
+        <td>2017-10-20 10:00</td>
+       </tr>
+      </tbody>
+     </table>
+    </vaadin-grid>
+    <vaadin-text-field :top="101px" :left="441px"></vaadin-text-field>
+    <vaadin-native-button plain-text :top="101px" :left="635px">
+      cari 
+    </vaadin-native-button>
+    <vaadin-native-button plain-text :top="343px" :left="197px">
+      EDIT 
+    </vaadin-native-button>
+    <vaadin-native-button plain-text :top="343px" :left="279px">
+      HAPUS 
+    </vaadin-native-button>
+    <vaadin-native-button plain-text :top="343px" :left="82px">
+      TAMBAH 
+    </vaadin-native-button>
+   </vaadin-absolute-layout>
+  </vaadin-absolute-layout>
+ </body>
+</html>

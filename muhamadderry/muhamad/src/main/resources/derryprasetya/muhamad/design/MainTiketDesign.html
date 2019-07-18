@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-absolute-layout>
+   <vaadin-absolute-layout>
+    <vaadin-label plain-text :top="17px" :left="277px">
+      Menu Tiket 
+    </vaadin-label>
+    <vaadin-grid width="611px" height="188px" :top="140px" :left="0px">
+     <table>
+      <colgroup>
+       <col column-id="id" sortable="false">
+       <col column-id="nama_supir" sortable="false">
+       <col column-id="alamat" sortable="false">
+       <col column-id="no_telp" sortable="false">
+       <col column-id="no_polisi" sortable="false">
+      </colgroup>
+      <thead>
+       <tr default>
+        <th plain-text column-ids="id">ID</th>
+        <th plain-text column-ids="nama_supir">Nama Supir</th>
+        <th plain-text column-ids="alamat">Alamat</th>
+        <th plain-text column-ids="no_telp">No Telepon</th>
+        <th plain-text column-ids="no_polisi">No Polisi</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr item="id1">
+        <td>1</td>
+        <td>Eko</td>
+        <td>0813284343433</td>
+        <td>Jl.cisaranten</td>
+        <td>D 2524 ZZC</td>
+       </tr>
+       <tr item="id2">
+        <td>2</td>
+        <td>Budi</td>
+        <td>0918234483343</td>
+        <td>Jl. Melawai</td>
+        <td>B 4343 KDF</td>
+       </tr>
+       <tr item="id3">
+        <td>3</td>
+        <td>Adi Putra</td>
+        <td>0900934483343</td>
+        <td>Jl. panglima polim</td>
+        <td>B 2343 DKJ</td>
+       </tr>
+      </tbody>
+     </table>
+    </vaadin-grid>
+    <vaadin-text-field :top="101px" :left="253px"></vaadin-text-field>
+    <vaadin-native-button plain-text :top="101px" :left="451px">
+      cari 
+    </vaadin-native-button>
+    <vaadin-native-button plain-text :top="343px" :left="357px">
+      EDIT 
+    </vaadin-native-button>
+    <vaadin-native-button plain-text :top="343px" :left="430px">
+      HAPUS 
+    </vaadin-native-button>
+    <vaadin-native-button plain-text :top="343px" :left="253px">
+      TAMBAH 
+    </vaadin-native-button>
+   </vaadin-absolute-layout>
+  </vaadin-absolute-layout>
+ </body>
+</html>
